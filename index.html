@@ -1,13 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <title>Document</title>
 </head>
-<body>  
-    <h1>Auto reload!</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptas consequuntur et. Dolore quas laboriosam corrupti, velit nostrum totam alias aliquam similique ex recusandae tenetur fugit fugiat aut molestiae quam!</p>
+
+<body>
+
+    <!-- комментарии обязательны, т.к. это хороший тон  -->
+    <h1 id="header" class="one">Auto reload!</h1>
+    <span>
+        <a href="tel:+79779382961">+7(977)938-29-61</a>
+    </span>
+    <h1><a href="/">Главная</a></h1>
+    <form action="" method="" enctype="" autocomplete>
+        <input type="file" name="" id="">
+        <hr>
+        <input type="range" min="0" max="100" step="10" name="" id="">
+        <hr>
+        <input type="number" name="" id="" step="10">
+        <input type="hidden">
+        <hr>
+        <input type="color" name="" id="">
+        <hr>
+        <input type="date" name="" id="">
+    </form>
+    <hr>
+    <!-- post - конфиденциально, get - можно посмотреть -->
+    <form action="" method="post" enctype="multipart/form-data" autocomplete>
+        Имя
+        <input type="text" placeholder="введите имя" name="first-name" tabindex="1" required>
+
+        Фамилия
+        <input type="text" placeholder="введите имя" name="last-name" tabindex="3">
+
+        Пароль
+        <input type="password" placeholder="введите пароль" name="password" tabindex="2">
+
+        Аватар
+        <input type="file" name="" id="">
+
+        <hr>
+        <input type="submit" value="submit">
+        <button type="submit">Submit</button>
+        <input type="reset" value="Reset">
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</tр>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Стоимость</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td rowspan="4">Морозов</td>
+                    <td rowspan="4">Никита</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>4123</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Итоговая стоимость</td>
+                    <td>5000</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <h3>Ваши интересы</h3>
+        <label for="music">Музыка</label>
+        <input type="checkbox" checked id="music">
+        Спорт <input type="checkbox">
+        Разработка <input type="checkbox">
+        Сон <input type="checkbox">
+        <hr>
+        <h3>Способ оплаты</h3>
+        Visa <input type="radio" name="payment">
+        MasterCard <input type="radio" name="payment">
+        Mir <input type="radio" name="payment">
+        <hr>
+        <select name="" id="">
+            <option value="">Выберите страну</option>
+            <option value="">Россия</option>
+            <optgroup label="Европа">
+                <option value="">Англия</option>
+                <option value="">Китай</option>
+                <option value="">Великобритания</option>
+            </optgroup>
+        </select>
+        <hr>
+        <h3>Инностранные языки</h3>
+        <select name="" id="" multiple>
+            <option value="">Немецкий</option>
+            <option value="">Русский</option>
+            <option value="">Английский</option>
+        </select>
+        <hr>
+        <h3>комментарии</h3>
+        <textarea name="" id="" placeholder="Текс"></textarea>
+    </form>
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptas consequuntur et. Dolore quas laboriosam
+        corrupti, velit nostrum totam alias aliquam similique ex recusandae tenetur fugit fugiat aut molestiae quam!</p>
+
+    <h1 id="second-header">Второй хэдер</h1>
+    <ul>
+        <li>text 2</li>
+    </ul>
+
+    <img src="/img/new_ava png.png" alt="абсолютный путь" width="20%">
+    <img src="../../img/new_ava png.png" alt="относительный путь" width="20%">
+
+    <!-- Ссылка с открытием в новом окне - _blank или там же - _self -->
+    <p><a href="/img/new_ava png.png" target="_self">Тестовая ссылка</a></p>
+
+    <!-- Скачиваем картинку с названием my_file -->
+    <p><a href="/img/new_ava png.png" target="_self" download="my_file">Ссылка на скачивание</a></p>
+
+    <a href="./about.html" title="На страницу обо мне">Ссылка на страницу обо мне</a>
+
+    <!-- Группировка элементов -->
+    <div class="one">Я див</div>
+    <div class="one">Я див</div>
+    <div class="one two three">Я див</div>
+    <div>Я див</div>
+
+    <span>Я спан</span>
+    <span>Я спан</span>
+    <span>Я спан</span>
+    <span>Я спан</span>
+
 </body>
+
 </html>
